@@ -1,0 +1,8 @@
+const serviceCrosswalk = require('./service-crosswalk.json');
+function getServiceCrosswalk(hrpServiceName) {
+    return serviceCrosswalk[hrpServiceName] || hrpServiceName;
+}
+console.log(
+    getServiceCrosswalk("Emergency Medical")
+);
+// Output: Emergency Medical Facility
